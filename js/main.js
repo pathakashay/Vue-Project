@@ -76,6 +76,20 @@ new Vue
       {
         this.notes.splice(this.notes.indexOf(note),1);
       },
+        show: function()
+      {
+        this.showNotes = true
+      },
+
+      hide: function()
+      {
+        this.showNotes = false
+      },
+
+      saved: function()
+      {
+        this.inEditMode = false;
+      },
 
 
     }
